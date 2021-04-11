@@ -1,6 +1,7 @@
-# cartesianAPI - Diogo Correia A. Silva 
+# CartesianAPI - Diogo Correia A. Silva 
 
-API server in go that deal with a series of points represented as (x,y) coordinates on a simple 2-dimensional plane. Take a look at https://en.wikipedia.org/wiki/Cartesian_coordinate_system if you need a refresher on this concept.
+API server in go that deals with a series of points represented as (x,y) coordinates on a simple 2-dimensional plane. 
+Take a look at https://en.wikipedia.org/wiki/Cartesian_coordinate_system if you need a refresher on this concept.
 
 It has an api route at /api/points that accepts a GET request with the following parameters, and returns a JSON list of points that are within distance from x,y, using the Manhattan distance method. 
 The points are beeing returned in order of increasing distance from the search origin.
