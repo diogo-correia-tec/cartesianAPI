@@ -1,0 +1,44 @@
+basePath: /api/
+definitions:
+  dto.Response:
+    properties:
+      distance:
+        type: integer
+      x:
+        type: integer
+      "y":
+        type: integer
+    type: object
+host: localhost:8000
+info:
+  contact:
+    email: diogo.correia.tec@gmail.com
+    name: Diogo Correia Araujo Silva
+  description: API to Get points in a cartesian plane within distance of a given coordinate
+  title: Cartesian API
+  version: "1.0"
+paths:
+  /points:
+    get:
+      consumes:
+      - application/json
+      description: Get points that are within the distance range of a given coordinate
+      parameters:
+      - in: query
+        name: distance
+        type: integer
+      - in: query
+        name: x
+        type: integer
+      - in: query
+        name: "y"
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.Response'
+      summary: Get points that are within the distance range
+swagger: "2.0"

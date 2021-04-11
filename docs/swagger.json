@@ -1,0 +1,69 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API to Get points in a cartesian plane within distance of a given coordinate",
+        "title": "Cartesian API",
+        "contact": {
+            "name": "Diogo Correia Araujo Silva",
+            "email": "diogo.correia.tec@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8000",
+    "basePath": "/api/",
+    "paths": {
+        "/points": {
+            "get": {
+                "description": "Get points that are within the distance range of a given coordinate",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Get points that are within the distance range",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "name": "distance",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "x",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "y",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/dto.Response"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "dto.Response": {
+            "type": "object",
+            "properties": {
+                "distance": {
+                    "type": "integer"
+                },
+                "x": {
+                    "type": "integer"
+                },
+                "y": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
