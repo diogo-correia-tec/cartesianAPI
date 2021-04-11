@@ -33,7 +33,7 @@ go run main.go
 OR
 
 ```
-Execute the file "cartesianAPI.exe" or build
+Execute the file "cartesianAPI.exe"
 ```
 
 -You can use your postman or curl to make a request to:
