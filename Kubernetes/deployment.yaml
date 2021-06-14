@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cartesianapi
+spec:
+  selector:
+    matchLabels:
+      app: cartesianapi
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: cartesianapi
+    spec:
+      containers:
+      - name: cartesianapi
+        image: diogoxcorreia/cartesianapi:latest
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cartesianapi
+spec:
+  selector:
+    app: cartesianapi
+  ports:
+    - protocol: TCP
+      port: 8000
