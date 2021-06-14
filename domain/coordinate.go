@@ -1,10 +1,11 @@
 package domain
 
 import (
-	"cartesianAPI/dto"
 	"errors"
 	"math"
 	"sort"
+
+	"github.com/diogo-correia-tec/cartesianAPI/dto"
 )
 
 // Coordinate is the base data been validated

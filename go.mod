@@ -1,10 +1,9 @@
-module cartesianAPI
+module github.com/diogo-correia-tec/cartesianAPI
 
 go 1.15
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-	github.com/go-openapi/analysis v0.20.1 // indirect
 	github.com/go-swagger/go-swagger v0.27.0 // indirect
 	github.com/gorilla/mux v1.8.0
 	github.com/pelletier/go-toml v1.9.0 // indirect

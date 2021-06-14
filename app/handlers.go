@@ -1,13 +1,14 @@
 package app
 
 import (
-	"cartesianAPI/domain"
-	"cartesianAPI/dto"
-	"cartesianAPI/util"
 	"encoding/json"
 	"errors"
 	"net/http"
 	"strconv"
+
+	"github.com/diogo-correia-tec/cartesianAPI/domain"
+	"github.com/diogo-correia-tec/cartesianAPI/dto"
+	"github.com/diogo-correia-tec/cartesianAPI/util"
 )
 
 // GetPoints godoc

@@ -1,12 +1,13 @@
 package util
 
 import (
-	"cartesianAPI/domain"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
+
+	"github.com/diogo-correia-tec/cartesianAPI/domain"
 )
 
 // CoordinateList shares the global Coordinates imported

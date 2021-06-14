@@ -1,13 +1,14 @@
 package main
 
 import (
-	"cartesianAPI/app"
-	"cartesianAPI/util"
 	"fmt"
 	"log"
 	"net/http"
 
-	_ "cartesianAPI/docs"
+	"github.com/diogo-correia-tec/cartesianAPI/app"
+	"github.com/diogo-correia-tec/cartesianAPI/util"
+
+	_ "github.com/diogo-correia-tec/cartesianAPI/docs"
 
 	httpSwagger "github.com/swaggo/http-swagger"
 
